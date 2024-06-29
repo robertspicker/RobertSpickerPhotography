@@ -1,0 +1,63 @@
+<!DOCTYPE html>  <!-- Trigger redeployment -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Spicker Photography</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Robert Spicker Photography</h1>
+            <p>Street and Landscape Photography</p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-nav">
+            <button onclick="showGallery('street')">Street</button>
+            <button onclick="showGallery('landscape')">Landscape</button>
+        </div>
+        <div id="gallery-content" class="gallery-content"></div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Robert Spicker is a dedicated photographer specializing in street and landscape photography. His work captures the essence of the environment with a minimalist yet powerful aesthetic.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
